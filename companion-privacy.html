@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — QVIEW Companion</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 32px 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #0b0f17;
+      color: #e6edf7;
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #121826;
+      border: 1px solid #243047;
+      border-radius: 16px;
+      padding: 32px;
+    }
+    h1 { margin-top: 0; color: #38bdf8; font-size: 28px; }
+    h2 { margin-top: 28px; color: #7dd3fc; font-size: 19px; }
+    p, li { color: #cbd5e1; }
+    a { color: #38bdf8; }
+    .meta { color: #94a3b8; font-size: 14px; margin-bottom: 24px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy — QVIEW Companion</h1>
+    <div class="meta">Effective Date: November 24, 2026</div>
+
+    <p>
+      This Privacy Policy describes how <strong>QVIEW Companion</strong> (package <code>tv.qview.companion</code>,
+      "the App", "we", "our") collects, uses, and protects information when you use our Android mobile companion
+      application for <strong>QVIEW WatchParty</strong>.
+    </p>
+
+    <h2>1. Information We Collect and Process</h2>
+    <ul>
+      <li>
+        <strong>Anonymous Account &amp; Profile Information:</strong> When you use the App, an anonymous
+        authentication identifier (<code>auth.uid</code>) is created via Supabase Auth. You may optionally enter a
+        display nickname and select preferred room categories/interests, which are synced to our backend so
+        other participants can see your nickname in rooms and chat. QVIEW Companion does not require an email
+        address, password, or Google account sign-in.
+      </li>
+      <li>
+        <strong>Device Identifiers (Anti-Abuse &amp; Security):</strong> A hardware-derived Widevine DRM device
+        identifier (or a locally generated random UUID fallback if unavailable) is stored locally and sent to
+        our backend strictly for anti-spam protection, room rating cooldown enforcement, and enforcing room or
+        platform bans. It is never used for advertising or cross-app tracking.
+      </li>
+      <li>
+        <strong>Camera Access (On-Device QR Scanning Only):</strong> If you grant the optional Camera permission
+        (<code>android.permission.CAMERA</code>), the App uses your camera solely to scan QVIEW WatchParty QR codes
+        (for joining rooms or pairing with Android TV). Camera frames are processed locally on your device using
+        Android CameraX and Google ML Kit Barcode Scanning and are never recorded, stored, or transmitted to our
+        servers or third parties.
+      </li>
+      <li>
+        <strong>User-Generated Content &amp; In-App Messages:</strong> Watch party room metadata created or edited
+        by you (room titles, descriptions, schedules, categories, privacy settings, PINs, stream and poster URLs),
+        room join requests, room ratings, and real-time chat messages sent during watch parties.
+      </li>
+      <li>
+        <strong>Local App Preferences:</strong> Your nickname, interests, last entered room PIN, recent stream/poster
+        URLs, approved room invites, and appearance settings are stored locally on your device via Android DataStore
+        and SharedPreferences.
+      </li>
+    </ul>
+
+    <h2>2. How We Use Your Data</h2>
+    <ul>
+      <li><strong>App Functionality:</strong> Joining and managing watch party rooms, pairing with Android TV devices, sending and displaying live chat messages, handling room join requests, and scanning QR codes.</li>
+      <li><strong>Safety, Moderation &amp; Anti-Abuse:</strong> Preventing spam, enforcing host room bans and platform blocks, and limiting duplicate room ratings.</li>
+    </ul>
+
+    <h2>3. No Ads, No Payments, No Data Selling</h2>
+    <p>
+      QVIEW Companion does not display third-party advertisements, does not include ad-tracking SDKs, does not
+      process in-app purchases or payment details, and never sells or rents user data to third parties.
+    </p>
+
+    <h2>4. Data Storage and Infrastructure</h2>
+    <p>
+      All network traffic is transmitted over encrypted connections (HTTPS/WSS). We rely on the following
+      service providers strictly to operate the App:
+    </p>
+    <ul>
+      <li><strong>Supabase:</strong> Anonymous authentication, database storage, and server-side RPC operations.</li>
+      <li><strong>Cloudflare Workers:</strong> Real-time WebSocket room synchronization and chat message delivery.</li>
+      <li><strong>Google ML Kit Barcode Scanning:</strong> On-device QR code recognition.</li>
+    </ul>
+
+    <h2>5. Data Retention and Deletion</h2>
+    <p>
+      You can clear locally stored data at any time by clearing App storage in Android system settings or
+      uninstalling the App. You can also request deletion of your server-side profile and associated user data
+      at any time via our
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-A9k6oB9piL5VQzfW0iYqiw596zlm5cbD0gkqv3rZ6KehGg/viewform" target="_blank" rel="noopener noreferrer">Account &amp; Data Deletion Request Form</a>
+      or by emailing us.
+    </p>
+    <p>
+      Deletion requests are processed within 7 business days. Minimal security and abuse-prevention records
+      (such as active ban hashes) may be retained as necessary to protect users and enforce service rules.
+    </p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>
+      QVIEW Companion is not directed to children under 13 (or the minimum age required by applicable local law,
+      including 18 where applicable), and we do not knowingly collect personal information from children.
+    </p>
+
+    <h2>7. Contact</h2>
+    <p>
+      If you have any questions about this Privacy Policy or your data, contact us at:
+      <a href="mailto:qviewplayer.feedback@gmail.com">qviewplayer.feedback@gmail.com</a>
+    </p>
+  </div>
+</body>
+</html>
